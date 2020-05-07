@@ -1,0 +1,66 @@
+.searchbar {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 6px;
+	background-color: var(--primary-bg-color);
+	font-size: 24px;
+	text-align: initial;
+
+	border: 0px;
+	border-radius: 10px;
+	height: 32px;
+	display: table;
+}
+
+.searchbar img { 
+	height: 16px;
+	padding-top: 3px;
+	padding-right: 10px;
+	display: table-cell;
+	margin: 0;
+}
+
+.searchbar div {
+	display: table-cell;
+	width: auto;
+	height: auto;
+} 
+
+.searchbar input {
+	width: 100%;
+
+	outline: none;
+	font-family: Garamond;
+	font-size: 20px;
+	color: var(--text-color);
+	background: var(--primary-bg-color);
+	border: none;
+}
+
+.searchResults {
+	margin: 0;
+	padding: 0;
+}
+
+.searchResults li {
+	list-style: none;
+	background: var(--primary-bg-color);
+	border: 2px solid var(--primary-foreground-color);
+	padding: 10px;
+	text-align: left;
+}
+
+.searchResultTitle {
+	font-size: 20px;
+}
+
+.searchResultAuthor {
+	color: var(--secondary-text-color);
+	font-style: italic;
+}
+
+.searchResultYear {
+	color: var(--secondary-text-color);
+	display: block;
+	float: right;
+}

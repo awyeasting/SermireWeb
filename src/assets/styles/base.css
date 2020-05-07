@@ -1,0 +1,163 @@
+:root {
+	--primary-bg-color: #0e0e28;
+	--secondary-bg-color: #060612;
+	--primary-foreground-color: #1e1948;
+	--text-color: #FFF;
+	--secondary-text-color: #BBB;
+	--highlight-color: #5f4eed;
+	--highlight-second-color: #5a4ebf;
+	--disabled-highlight: #7b74ab;
+}
+
+#top-bar {
+	height: 50px;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: var(--secondary-bg-color);
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	box-shadow: 0 0px 5px 0 var(--primary-foreground-color);
+}
+
+#top-bar-content {
+	height: 100%;
+	text-align: right;
+}
+
+#login-button {
+	display: block;
+	float: right;
+	float: bottom;
+	padding-top: 3px;
+	font-size: 18px;
+}
+
+.content-square {
+	position: relative;
+	box-sizing: border-box;
+	background-color: var(--primary-foreground-color);
+	
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	margin-top: 100px;
+	padding: 20px;
+	padding-left: 60px;
+	padding-right: 60px;
+	text-align: center;
+
+	display: block;
+}
+
+.content-square-header {
+	font-size: 40px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	display: block;
+}
+
+.content-square-desc {
+	margin: 0;
+	font-size: 24px;
+	margin-bottom: 70px;
+
+	display: block;
+}
+
+.content-square-actiontext {
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.content-square-footer {
+	display: block;
+}
+
+.custom-text-input-box {
+	box-sizing: border-box;
+	padding: 8px;
+	background-color: var(--primary-bg-color);
+	font-size: 24px;
+	text-align: initial;
+
+	border: 0px;
+	border-radius: 20px;
+	height: 32px;
+	display: table;
+}
+
+.custom-text-input {
+	outline: none;
+	font-family: Garamond;
+	font-size: 20px;
+	color: var(--text-color);
+	background: var(--primary-bg-color);
+	border: none;
+	width: 100%;
+}
+
+.nextbutton {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background: var(--highlight-color);
+	padding: auto;
+}
+
+.nextbutton:hover {
+	background: var(--highlight-second-color);
+	cursor: pointer;
+}
+
+.nextbutton span {
+	display: block;
+	margin: auto;
+	font-size: 26px;
+	margin-top: 10px;
+	color: var(--text-color);
+}
+
+.addbutton {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background: var(--highlight-color);
+	padding: auto;
+}
+
+.addbutton:hover {
+	background: var(--highlight-second-color);
+	cursor: pointer;
+}
+
+.addbutton span {
+	display: block;
+	margin: auto;
+	font-size: 20px;
+	margin-top: 5px;
+	color: var(--text-color);
+}
+
+.content-square-footer-action-text {
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+::placeholder {
+	color: var(--text-color);
+	opacity: 0.4;
+}
+
+body {
+	margin: 0px;
+	color: var(--text-color);
+	font-family: Garamond;
+	background-color: var(--primary-bg-color);
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
