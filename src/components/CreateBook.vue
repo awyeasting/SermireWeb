@@ -61,7 +61,7 @@ export default {
 			}
 
 			this.buttonsEnabled = false
-			axios.post('http://localhost:8080/books/?title=' + this.title + '&author=' + this.author + '&publcation_year=' + this.publicationyear + '&record_language=en').then(response => {
+			axios.post('https://api.sermire.com/books/?title=' + this.title + '&author=' + this.author + '&publcation_year=' + this.publicationyear + '&record_language=en').then(response => {
 				console.log(response)
 				this.$router.go(-1)
 			}).catch((err) => {

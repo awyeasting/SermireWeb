@@ -26,7 +26,7 @@ export default {
 		notFound: false
 	}),
 	mounted(){
-		axios.get('http://localhost:8080/stickers/' + this.$route.params.stickercode).then( response => {
+		axios.get('https://api.sermire.com/stickers/' + this.$route.params.stickercode).then( response => {
 				// Success
 				console.log(response)
 				this.sticker = response.data.sticker

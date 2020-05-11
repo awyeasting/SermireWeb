@@ -52,7 +52,7 @@ export default {
 
 			this.buttonsEnabled = false
 			console.log(this.$route.params.bookid)
-			axios.post('http://localhost:8080/stickers/' + this.$route.params.stickercode + '/' + this.$route.params.bookid).then(response => {
+			axios.post('https://api.sermire.com/stickers/' + this.$route.params.stickercode + '/' + this.$route.params.bookid).then(response => {
 				console.log(response)
 			}).catch((err) => {
 				console.log(err)
@@ -68,7 +68,7 @@ export default {
 		}
 	},
 	mounted() {
-		axios.get('http://localhost:8080/books/' + this.$route.params.bookid).then(response => {
+		axios.get('https://api.sermire.com/books/' + this.$route.params.bookid).then(response => {
 				console.log(response)
 				this.book = response.data.book
 		}).catch((err) => {

@@ -1,5 +1,5 @@
 module.exports = {
 	devServer:  {
-		proxy: 'http://api.sermire.com/'
+		proxy: 'localhost:8080'
 	}
 }

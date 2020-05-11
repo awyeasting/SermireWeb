@@ -47,7 +47,7 @@ export default {
 	props: ['sticker'],
 	mounted() {
 		console.log("Mounted")
-		axios.get('http://localhost:8080/books/' + this.sticker.book_id).then(response => {
+		axios.get('https://api.sermire.com/books/' + this.sticker.book_id).then(response => {
 				console.log(response)
 				this.book = response.data.book
 		}).catch((err) => {
