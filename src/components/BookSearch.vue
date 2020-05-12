@@ -37,7 +37,7 @@ export default {
 	}),
 	methods: {
 		prelimSearchBook: function() {
-			axios.get('https://api.sermire.com/books/?search=' + this.bookSearchText).then( response => {
+			axios.get(this.$hostname + '/books/?search=' + this.bookSearchText).then( response => {
 				// Success
 				this.bookSearchResults = response.data.books;
 			})
