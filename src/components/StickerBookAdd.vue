@@ -1,5 +1,5 @@
 <template>
-	<div class="content-square">
+	<div class="content-square" v-if="book">
 		<div class="content-square-header">
 			Does this book look right?
 		</div>
@@ -21,13 +21,23 @@
 				</tbody>
 			</table>
 		</div>
+		<br/>
+		<br/>
 		<div class="content-square-footer">
 			<div @click="addbook" class="review-button confirmation-button" :class="disabledButton">
 				Yes
 			</div>
 			<div @click="goback" class="review-button decline-button" :class="disabledButton">
-					No
+				No
 			</div>
+		</div>
+	</div>
+	<div class="content-square" v-else>
+		<div class="content-square-header">
+			Checking Book Information...
+		</div>
+		<div class="content-square-desc">
+			Please wait while we doublecheck the book with our database
 		</div>
 	</div>
 </template>
@@ -53,6 +63,9 @@ export default {
 			this.buttonsEnabled = false
 			console.log(this.$route.params.bookid)
 			axios.post(this.$hostname + '/stickers/' + this.$route.params.stickercode + '/' + this.$route.params.bookid).then(response => {
+				if (response.data.result == 'success') {
+					this.$router.push('/' + this.$route.params.stickercode)
+				}
 				console.log(response)
 			}).catch((err) => {
 				console.log(err)
@@ -77,44 +90,3 @@ export default {
 	}
 }
 </script>
-
-<style>
-.review-button {
-	display: inline-block;
-	padding: 10px;
-	font-size: 20px;
-	border-radius: 20px;
-	box-sizing: border-box;
-	margin-right: 2%;
-	margin-left: 2%;
-	width: 45%;
-}
-
-.confirmation-button {
-	background: var(--highlight-color);
-}
-
-.confirmation-button:hover {
-	background: var(--highlight-second-color);
-	cursor: pointer;
-}
-
-.decline-button {
-	background: #D00;
-}
-
-.decline-button:hover {
-	background: #b00;
-	cursor: pointer;
-}
-
-.disabled-response-button {
-	background: var(--disabled-highlight);
-	color: var(--secondary-text-color);
-}
-
-.disabled-response-button:hover {
-	background: var(--disabled-highlight);
-	cursor: auto;
-}
-</style>

@@ -1,7 +1,12 @@
 <template>
-	<div id="site-logo">
-		Sermire
-	</div>
+	<router-link to="/">
+		<div id="site-logo">
+			<img src="../assets/images/sermirewhitesmall.png"/>
+			<div>
+				Sermire
+			</div>
+		</div>
+	</router-link>
 </template>
 
 <script>

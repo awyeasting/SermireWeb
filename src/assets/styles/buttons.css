@@ -1,0 +1,136 @@
+.commentbutton {
+	width: 100px;
+	height: 30px;
+	border-radius: 15px;
+	background: var(--highlight-color);
+	padding: auto;
+	text-align: center;
+}
+
+.commentbutton:hover {
+	background: var(--highlight-second-color);
+	cursor: pointer;
+}
+
+.commentbutton span {
+	display: block;
+	margin: auto;
+	font-size: 20px;
+	padding-top:4px;
+	color: var(--button-text-color);
+}
+
+.disabled-commentbutton {
+	background: var(--disabled-highlight)
+}
+
+.disabled-commentbutton:hover {
+	background: var(--disabled-highlight);
+	cursor: default;
+}
+
+#login-button {
+	display: block;
+	float: right;
+	float: bottom;
+	padding-top: 3px;
+	font-size: 18px;
+}
+
+.nextbutton {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background: var(--highlight-color);
+	padding: auto;
+}
+
+.nextbutton:hover {
+	background: var(--highlight-second-color);
+	cursor: pointer;
+}
+
+.nextbutton span {
+	display: block;
+	margin: auto;
+	font-size: 26px;
+	margin-top: 10px;
+	color: var(--button-text-color);
+}
+
+.addbutton {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background: var(--highlight-color);
+	padding: auto;
+}
+
+.addbutton:hover {
+	background: var(--highlight-second-color);
+	cursor: pointer;
+}
+
+.addbutton span {
+	display: block;
+	margin: auto;
+	font-size: 20px;
+	margin-top: 5px;
+	color: var(--button-text-color);
+}
+
+.menu-login-button {
+	color: var(--top-bar-text-color);
+	display: inline-block;
+	padding-top: 4px;
+	position: relative;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; 
+}
+
+.menu-login-button:hover {
+	cursor:pointer;
+}
+
+.review-button {
+	display: inline-block;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 20px;
+	box-sizing: border-box;
+	margin-right: 2%;
+	margin-left: 2%;
+	width: 45%;
+}
+
+.confirmation-button {
+	background: var(--highlight-color);
+}
+
+.confirmation-button:hover {
+	background: var(--highlight-second-color);
+	cursor: pointer;
+}
+
+.decline-button {
+	background: #D00;
+}
+
+.decline-button:hover {
+	background: #b00;
+	cursor: pointer;
+}
+
+.disabled-response-button {
+	background: var(--disabled-highlight);
+	color: var(--secondary-text-color);
+}
+
+.disabled-response-button:hover {
+	background: var(--disabled-highlight);
+	cursor: auto;
+}

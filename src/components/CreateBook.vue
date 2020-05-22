@@ -3,25 +3,21 @@
 		<div class="content-square-header">
 			Create New Book
 		</div>
-		<!--  TODO: Take title input -->
 		<div class="custom-text-input-box" style="width:100%;margin-bottom:10px">
 			<input class="custom-text-input" type="text" name="title" placeholder="Book title" autocomplete="off" v-model="title"/>
 		</div>
-
-		<!--  TODO: Take author input -->
 		<div class="custom-text-input-box" style="width:100%;margin-bottom:10px">
 			<input class="custom-text-input" type="text" name="author" placeholder="Author" autocomplete="off" v-model="author"/>
-			<!-- TODO: add author button -->
 		</div>
+		<!-- TODO
 		<div style="margin-bottom:10px">
 			<div class="addbutton" style="display:inline-block">
 				<span> + </span>
 			</div>
-			<!-- TODO -->
 			<span style="padding-left:10px">Add Additional Author</span>
 		</div>
+		-->
 
-		<!--  TODO: Take publication year input -->
 		<div class="custom-text-input-box" style="width:100%">
 			<input class="custom-text-input" type="number" name="publicationyear" placeholder="Publication Year" autocomplete="off" v-model="publicationyear"/>
 		</div>
@@ -48,7 +44,7 @@ export default {
 	data: () => ({
 		title: "",
 		author: "",
-		publicationyear: null,
+		publicationyear: "",
 		buttonsEnabled: true
 	}),
 	methods: {
@@ -61,7 +57,7 @@ export default {
 			}
 
 			this.buttonsEnabled = false
-			axios.post(this.$hostname + '/books/?title=' + this.title + '&author=' + this.author + '&publcation_year=' + this.publicationyear + '&record_language=en').then(response => {
+			axios.post(this.$hostname + '/books/?title=' + this.title + '&author=' + this.author + '&publication_year=' + this.publicationyear + '&record_language=en').then(response => {
 				console.log(response)
 				this.$router.go(-1)
 			}).catch((err) => {

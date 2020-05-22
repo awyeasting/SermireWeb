@@ -1,0 +1,19 @@
+#top-bar {
+	height: 50px;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: var(--top-bar-color);
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	box-shadow: 0 0px 5px 0 var(--primary-foreground-color);
+}
+
+#top-bar-content {
+	height: 100%;
+	text-align: right;
+}
+
+#top-bar-username {
+	color: var(--top-bar-text-color);
+}

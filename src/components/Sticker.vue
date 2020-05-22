@@ -5,9 +5,13 @@
 			<NewSticker v-else sticker="sticker"/>
 		</div>
 		<StickerNotFound v-else-if="notFound"/>
-		<div v-else>
-			<!-- TODO -->
-			Sticker lookup in progress
+		<div v-else class="content-square">
+			<div class="content-square-header">
+				Sticker lookup in progress
+			</div>
+			<div class="content-square-desk">
+				<img src="../assets/images/loading.gif"/>
+			</div>
 		</div>
 	</div>
 </template>

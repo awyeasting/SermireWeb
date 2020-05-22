@@ -8,7 +8,7 @@
 		</div>
 		<div>
 			<ul class="searchResults">
-				<router-link v-for="book in bookSearchResults" v-bind:key="book" :to="{path: book.Id}" append>
+				<router-link v-for="(book, index) in bookSearchResults" v-bind:key="index" :to="{path: book.Id}" append>
 					<li>
 						<div class="searchResultTitle">
 						{{ book.Title }}

@@ -20,8 +20,7 @@
 					</tr>
 				</tbody>
 			</table>
-			<!-- TODO v -->
-			<span style="font-size:16px; font-style:italic">Doesn't look right? Click <a style="text-decoration:underline">here</a> to fix</span>
+			<span style="font-size:16px; font-style:italic">Doesn't look right? Click <router-link :to="{path: 'fix'}" append><a style="text-decoration:underline">here</a></router-link> to fix</span>
 		</div>
 		<div class="content-square-footer">
 			<div class="content-square-footer-action-text">
@@ -46,10 +45,8 @@ export default {
 	}),
 	props: ['sticker'],
 	mounted() {
-		console.log("Mounted")
 		axios.get(this.$hostname + '/books/' + this.sticker.book_id).then(response => {
-				console.log(response)
-				this.book = response.data.book
+			this.book = response.data.book
 		}).catch((err) => {
 			console.log(err)
 		})

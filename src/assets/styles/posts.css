@@ -1,0 +1,107 @@
+textarea {
+	margin-bottom: 5px;
+}
+
+.postsHeader {
+	margin-bottom: 20px;
+	font-size: 40px;
+	text-align: center;
+}
+
+.postsTitle {
+	font-size: 40px;
+}
+
+.postsAuthor {
+	font-size: 35px;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.postsCopy {
+	font-size: 25px;
+	color: var(--secondary-text-color);
+}
+
+.postUser {
+	height:30px;
+	border-radius: 15px;
+	background: var(--highlight-color);
+	display: inline-block;
+	box-sizing:border-box;
+	padding-top: 4px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: var(--highlight-text-color);
+}
+
+.postBody {
+	border-radius: 15px;
+	background: var(--primary-bg-color);
+	box-sizing:border-box;
+	padding: 15px;
+	font-size: 20px;
+}
+
+.postDate {
+	display: inline-block;
+	margin-left: 30px;
+	font-style: italic;
+}
+
+.post {
+	font-size: 20px;
+}
+
+.postTags {
+	float:right;
+
+}
+
+.postTag {
+	border-radius: 15px;
+	background: var(--tag-color);
+	box-sizing:border-box;
+	display: inline-block;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 20px;
+	margin-left: 10px;
+	color: var(--tag-text-color);
+}
+
+.postTag-meme {
+	background: #ca7c00;
+}
+
+.postTag-analysis {
+	background: #660096;
+}
+
+.postTag-plot {
+	background: #ff0072;
+}
+
+.postFooter {
+	margin-top: 10px;
+	height: 20px;
+}
+
+.postAction {
+	display: inline-block;
+}
+
+.postActions {
+	display: inline-block;
+}
+
+#post-tags-input {
+	margin-bottom: 10px;
+	border-style: solid;
+	border-color: var(--disabled-highlight);
+	border-width: 2px;
+	box-sizing:border-box;
+}
