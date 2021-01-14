@@ -72,11 +72,13 @@ body {
 
 h1 {
 	font-size: 40px;
+	font-weight: normal;
 	margin: 0px;
 }
 
 h2 {
 	font-size: 30px;
+	font-weight: normal;
 	margin: 0px;
 }
 
